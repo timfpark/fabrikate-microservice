@@ -1,0 +1,6 @@
+name: services
+generator: static
+path: "./manifests"
+subcomponents:
+  - name: service
+    source: "./service"

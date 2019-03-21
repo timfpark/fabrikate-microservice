@@ -1,0 +1,4 @@
+config:
+  image: "org.azurecr.io/group/simpleservice:670"
+  replicas: 3
+  version: stable

@@ -1,0 +1,4 @@
+config:
+  image: "org.azurecr.io/group/simpleservice:671"
+  replicas: 1
+  version: canary

@@ -1,0 +1,32 @@
+subcomponents:
+  service:
+    config:
+      service:
+        name: simple-service
+        namespace: services
+        port: 80
+        dns: simple.org.io
+  canary:
+    config:
+      resources:
+        requests:
+          cpu: "250m"
+          memory: "256Mi"
+        limits:
+          cpu: "1000m"
+          memory: "512Mi"
+      service:
+        name: "simple-service"
+        namespace: services
+  stable:
+    config:
+      resources:
+        requests:
+          cpu: "250m"
+          memory: "256Mi"
+        limits:
+          cpu: "1000m"
+          memory: "512Mi"
+      service:
+        name: "simple-service"
+        namespace: services
